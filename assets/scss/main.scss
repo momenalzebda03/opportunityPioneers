@@ -1,0 +1,1095 @@
+@import "color";
+
+// start other
+body {
+    text-transform: capitalize;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorGreenPoint;
+}
+
+.nuxt-devtools-hide {
+    display: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.lineLast::after,
+.lineLast::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ButtonContinue {
+    text-decoration: none;
+    background-color: $colorGrayButton;
+    padding: 13px 25px;
+
+    .spanContinue {
+        color: $colorButton;
+    }
+}
+
+.ButtonContinue.hoverable {
+    background-color: $colorGreen !important;
+    color: $colorWhite !important;
+    pointer-events: all;
+    opacity: 1;
+
+    span {
+        color: $colorWhite !important;
+    }
+}
+
+.inputPadding::placeholder {
+    padding-left: 27px;
+}
+
+.inputPaddingOverflowColor::placeholder {
+    color: $colorBlack;
+}
+
+.inputPaddingSelect::placeholder {
+    padding-left: 47px !important;
+}
+
+.rowChild {
+    row-gap: 25px;
+}
+
+.textArea {
+    resize: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.modal-footer {
+    border: 0 !important;
+}
+
+.inputBox {
+    width: 20px;
+    height: auto;
+}
+
+.divSidePar {
+    div:last-child {
+        hr {
+            display: none;
+        }
+    }
+}
+
+.labelSize {
+    font-size: 12px;
+}
+
+.selectJobPreferences {
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+}
+
+.arrow {
+    background-image: url("/assets/images/ArrowDopdown.png");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.5s;
+    width: 24px;
+    height: 24px;
+}
+
+.selectOpen.arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.listColor {
+    color: $colorNavbarChildProfile;
+}
+
+.arrowOverflow {
+    top: 55px !important;
+}
+
+.arrowOverflowDate {
+    top: 23px !important;
+}
+
+.arrowOverflowCompany {
+    top: 61px !important;
+}
+
+.displayNone {
+    display: none;
+}
+
+.hoverBoldList:hover {
+    font-weight: bold;
+
+    img {
+        filter: grayscale(100%) brightness(0%);
+    }
+}
+
+.listPositionProfile {
+    top: 25px;
+}
+
+.sizeSwift {
+    font-size: 13px;
+}
+
+.activeListFilter {
+    background-color: $colorActiveJobsFilter;
+    border: 1px solid $colorGreen !important;
+}
+
+.spanDesign {
+    color: $colorGray;
+}
+
+.spanStyleName {
+    font-size: 14px;
+}
+
+// end other
+// start navbar Sign Up
+body .indexNavbarPerint {
+    z-index: 3;
+}
+
+body nav {
+    z-index: 2;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+// end navbar Sign Up
+
+// start navbar User Profile
+body div div div div .disabled {
+    pointer-events: none;
+    opacity: 0.5s;
+}
+
+body nav div div div div ul li .lineNone {
+    color: $colorBlack;
+}
+
+body nav div div div div ul li .lineNone:hover {
+    color: $colorBlue;
+    text-decoration: underline;
+}
+
+body nav div div div div .imageSearch {
+    top: 10px;
+    left: 22px;
+}
+
+body nav div div div div .imageSearchOverflow {
+    left: 23px;
+}
+
+body nav div div ul li div .divMessaging {
+    top: 20px;
+    right: -60px;
+    max-height: 0;
+    min-width: 380px;
+    transition: 0.5s;
+}
+
+body nav div div ul li div .divMessaging .hieght100 {
+    height: 320px;
+}
+
+body nav div div ul li div .divMessaging.activeMessaging {
+    max-height: 450px;
+    min-width: 380px;
+}
+
+body nav div div ul li div div div div .imgMessages {
+    right: 25px;
+    top: 13px;
+}
+
+body nav div div ul li div div div ul .listStyleHoverMessages::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 67px;
+    margin-top: -10px;
+    background-color: $colorHoverMessages;
+    transition: 0.7s;
+}
+
+body nav div div ul li div div div ul .listStyleHoverMessages:hover::before {
+    width: 100%;
+    background-color: $colorHoverMessages;
+}
+
+body nav div div ul li .imageWidth {
+    width: 100%;
+}
+
+// end navbar User Profile
+// start navbar child profile
+body nav div div ul li .linkColorNavbarProfile {
+    color: $colorNavbarChildProfile;
+}
+
+body nav div div ul li .linkColorNavbarProfile.active,
+body nav div div ul li .linkColorNavbarProfile:hover {
+    color: $colorBlack;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $colorBlack;
+}
+
+// end navba child profile
+// start HayThere
+body .divHayThere {
+    padding-top: 120px !important;
+    height: 100vh;
+}
+
+body .divHayThere div .divHayPerint {
+    width: 808px;
+}
+
+body .divHayThere div .divHayPerint div .hChild {
+    color: $colorGray;
+}
+
+body .divHayThere div .divHayPerint div div .rowGapColumn ul .divCard .divPoint {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+}
+
+body .divHayThere div .divHayPerint div div .rowGapColumn ul .divCard {
+    cursor: pointer;
+    border: 1px solid $colorPointd;
+}
+
+body .divHayThere div .divHayPerint div div .rowGapColumn ul .divCard .divBoxImage {
+    img {
+        width: 40px;
+    }
+}
+
+body .divHayThere div .divHayPerint div div .rowGapColumn ul .active {
+    cursor: pointer;
+
+    .divBoxImage {
+        img {
+            filter: grayscale(100%) brightness(150%) sepia(100%) hue-rotate(90deg) saturate(500%);
+        }
+    }
+
+    border: 0px solid $colorPointd;
+
+    p {
+        font-size: 17px;
+        color: $colorGreenPoint;
+    }
+
+    .divPoint::after,
+    .divPoint::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .divPoint::after {
+        left: 0x;
+        top: 0.5px;
+        width: 16.5px;
+        height: 16.5px;
+        background-color: $colorGreen;
+    }
+
+    .divPoint::before {
+        left: -6.5px;
+        top: -6.5px;
+        width: 33px;
+        height: 33px;
+        background-color: $colorWhite;
+    }
+
+    background-color: $colorCard;
+}
+
+// end HayThere
+// start SignUp
+body .divChildSelect ul li div .lineLast {
+    height: 10px;
+    background-color: $colorLast;
+    transition: 0.5s;
+}
+
+body .divChildSelect ul li div .lineLast.activeEmail {
+    background-color: $colorGreen !important;
+}
+
+body .divChildSelect ul li div .lineLast.activeEmail::after {
+    content: url('/assets/images/checkTrue.png') !important;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -4px;
+    left: -19px;
+    z-index: 1;
+}
+
+body .divChildSelect ul li div .lineLast.active {
+    background-color: $colorPointd;
+}
+
+body .divChildSelect ul li div .lineLast::after {
+    left: -20px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    background-color: $colorPointd;
+}
+
+body .divChildSelect ul li div .lineLast::before {
+    left: -17.1px;
+    top: 0.8px;
+    width: 10px;
+    height: 10px;
+    background-color: $colorPointLast;
+    z-index: 1;
+}
+
+body .divChildSelect ul li .spanLast {
+    font-size: 15px;
+}
+
+body .divChildSelect ul li .spanLast.active {
+    font-weight: bold;
+}
+
+body div form div div .labelVaild::before {
+    content: "*";
+    position: absolute;
+    right: 0;
+    top: 8px;
+    color: $colorRed;
+    font-size: 17px;
+}
+
+body .divChildSelect {
+    transform: translateY(40px);
+}
+
+body .divChildSelect div div form div .rowChild div div div .imageWidthInput {
+    top: 12px;
+    left: 7px;
+    width: 23px;
+}
+
+body .divChildSelect div div form div .rowChild div div div .imageWidthInputOverflow {
+    top: 12px;
+    left: 90%;
+    width: 23px;
+}
+
+body div div div form div div .imageWidthInputOverflow1 {
+    top: 52px;
+    left: 96%;
+    width: 23px;
+}
+
+body div div form div .rowChild div div div .inputPaddingOverflow::placeholder {
+    padding-left: 0;
+}
+
+body div div form div .rowChild div div div .selectWaths {
+    top: 3px;
+    left: 0;
+    border: transparent;
+    border-right: 2px solid $colorPointLast;
+    height: 89%;
+    z-index: 1;
+
+    li {
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+body div div form div .rowChild div div div .selectWaths {
+    summary {
+        list-style: none;
+    }
+}
+
+body div div form div .rowChild div div div .selectWathsWhats {
+    left: -10px;
+    padding: 0 17px;
+}
+
+body div div form div .rowChild div div div .selectWathsWhats::before {
+    content: url("/assets/images/arrowInput.png");
+    position: absolute;
+    right: 1px;
+    transition: 0.3s;
+}
+
+body div div form div .rowChild div div div .selectWathsWhats.open::before {
+    transform: rotate(179deg);
+}
+
+body div div form .rowChild div div div .selectWaths li {
+    list-style: none;
+}
+
+body ul .listStyles {
+    transition: 0.5s;
+    flex: 0 !important;
+    width: 0 !important;
+    transition: 0.5s;
+}
+
+// end SignUp
+// start checkEmail
+body div form div .inputWidthEmail {
+    width: 47px;
+    border-radius: 5px;
+}
+
+body div form div .borderColorNormal {
+    border: 1.5px solid $colorPoint;
+}
+
+body div form div .inputWidthEmail::placeholder {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+body div form div .inputWidthEmailTrue {
+    color: $colorGreen;
+    border: 2px solid $colorGreen;
+}
+
+.colorProfile,
+body div form div .inputWidthEmailTrue::placeholder {
+    color: $colorGreen;
+}
+
+body div form div .inputWidthEmailFalse {
+    color: $colorRed !important;
+    border: 2px solid $colorRed !important;
+}
+
+body div form div .inputWidthEmailFalse::placeholder {
+    color: $colorRed !important;
+}
+
+// end CheckEmail
+// start page Profile All
+body .paddingPageProfile {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+// end page Profile All
+// start Page Profile navbarSide
+body div div div div div div .linkPhoto {
+    width: 40px;
+    bottom: -22px;
+    left: 20px;
+}
+
+body div div div div div div div .spanPioneers {
+    font-size: 12px;
+}
+
+.linkGreen,
+body div div div div .hoverButton .linkEdit {
+    text-decoration: none;
+    color: $colorGreen;
+}
+
+.imageMouse,
+body div div div div .hoverButton {
+    cursor: pointer;
+}
+
+body div div div div .hoverButton:hover {
+    .linkEdit {
+        color: $colorWhite;
+    }
+
+    .linkEdit::before {
+        filter: grayscale(100%) brightness(10000%);
+    }
+}
+
+.linkEdit::before {
+    content: url("/assets/images/pinsle.png");
+    position: absolute;
+    left: 40px;
+}
+
+// end Page Profile navbarSide
+// start center projects
+.divHoverListExperience:hover {
+    img {
+        display: block !important;
+    }
+}
+
+// end center projects
+// start page Profile Center
+body div .divBorderBottomProfileText {
+    border-bottom: 2px solid $colorNavbarChildProfile;
+}
+
+body div .rowChild div .hoverImageCard .divAbsoluteCardHover {
+    border-radius: 0 0 10px 10px;
+    background-color: $colorCardBottom;
+}
+
+body div div div div .modal-content {
+    min-width: 800px !important;
+    margin-left: -100px !important;
+}
+
+body div div div div div form div div .divImageTextErea {
+    top: 40px;
+    left: 250px;
+}
+
+body div div div div div form div div .textAreaPlaceholder::placeholder {
+    position: absolute;
+    top: 65px;
+    left: 230px;
+}
+
+body div div div div div form div div .textAreaPlaceholder {
+    border: 2px dotted $colorNavbarChildProfile;
+}
+
+body div div div div div form div div .inputConfirm:hover {
+    background-color: $colorWhite !important;
+    color: $colorGreen !important;
+}
+
+body div .divBorderBottomProfileText div div div div div div form div div .sizeLabel {
+    font-size: 12px;
+    color: $colorBlack;
+}
+
+// end page Profile Center
+// start page create data user
+body div div div div div .linkPhotoForm {
+    left: 395px !important;
+}
+
+body div div div div div .linkPhotoFormCompany {
+    left: 396px !important;
+}
+
+body .divChildSelect ul li .stepHeader {
+    transition: background-color 0.3s;
+}
+
+body .divChildSelect ul li .stepHeader.completed {
+    background-color: #28a745;
+    color: white;
+}
+
+body .divChildSelect .navigation {
+    margin-top: 20px;
+}
+
+// end page create data user
+// start page componentsForm
+body div div ul li .rowChild {
+    border: 2px solid $colorBorder;
+}
+
+body div div ul li .rowChild {
+    div:last-child {
+        .linkConnectedProfile {
+            color: $colorRed !important;
+        }
+    }
+}
+
+body div div ul li .rowChild {
+    div:nth-child(2) {
+        .linkConnectedProfile {
+            border: 2px solid $colorBorder;
+            color: $colorGray !important;
+        }
+    }
+}
+
+body div div ul li .rowChild {
+    div:nth-child(3) {
+        .linkConnectedProfile {
+            color: $colorGreen !important;
+        }
+    }
+}
+
+body .paddingPageProfile div div div div div form div div div .customRadio input[type="radio"] {
+    display: none;
+}
+
+body .paddingPageProfile div div div div div form div div div .customRadio label::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    bottom: -8px;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    background-color: $colorBorder;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+}
+
+body .paddingPageProfile div div div div div form div div div .customRadio input[type="radio"]:checked+label::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    bottom: 12.7px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $colorGreen;
+}
+
+body .paddingPageProfile div div div div div form div div div div div .arrowOverlfow {
+    top: 34% !important;
+}
+
+body .paddingPageProfile div div div div div form div div div .customRadioOverflow label::before {
+    bottom: -4px;
+}
+
+body .paddingPageProfile div div div div div form div div div .customRadioOverflow input[type="radio"]:checked+label::after {
+    bottom: 0.7px;
+    left: -5.4px;
+}
+
+// end page componentsForm
+// start compoany Profile
+body .paddingPageProfile div div div div div div .gapText {
+    gap: 140px;
+}
+
+body .paddingPageProfile div div div div div .divAddNewButton {
+    width: 120px;
+    background-color: $colorGreen;
+}
+
+body .paddingPageProfile div div div div div .divAddNewButtonOverflow {
+    width: 230px;
+}
+
+body .paddingPageProfile div div div div div .divAddNewButtonOverflow1 {
+    width: 300px;
+}
+
+body div div div div div .imageYay {
+    width: 13px;
+}
+
+body div div div div ul li .divList {
+    background-color: $colorList;
+}
+
+body .divPaddingSideBarCompany {
+    padding: 7% 0;
+}
+
+body div div div .imageSearch::before {
+    content: url("/assets/images/search.png");
+    position: absolute;
+    left: 7px;
+    top: 10px;
+}
+
+body div div div .imageSearch .paddingInputSearch {
+    padding-left: 35px;
+}
+
+body .paddingPageProfile div div div div div form div div div div .spanPLacholdere {
+    font-size: 14px;
+    color: $colorNavbarChildProfile;
+}
+
+body .paddingPageProfile div div div div div form div div div div .backgroundSkills {
+    min-width: 70px;
+    background-color: $colorSkills;
+}
+
+body .paddingPageProfile div div div div div form div div div .divKills {
+    max-height: 130px;
+}
+
+body .paddingPageProfile div div div div div form div div div div div .divSkillsGreen {
+    min-width: 73px;
+    background-color: $colorGreen;
+    gap: 10px;
+}
+
+body .paddingPageProfile div div div div div form div div div .divKillsOverflow {
+    max-height: 88px;
+}
+
+body div div div div form div div div div div div .blackPlashorlder::placeholder {
+    color: $colorBlack;
+}
+
+body div div div div form div div div div div div .custom-radio input[type="radio"] {
+    display: none;
+}
+
+body div div div div form div div div div div div .custom-radio label::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    bottom: 8px;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    background-color: $colorBorder;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+}
+
+body div div div div form div div div div div div .custom-radio input[type="radio"]:checked+label::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    bottom: 12.7px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $colorGreen;
+}
+
+body div div div div form div div .textAreaPlaceholderOverflow::placeholder {
+    left: 32% !important;
+}
+
+body div div div div .modalContentSmoll {
+    min-width: 0 !important;
+    width: 80%;
+    margin-left: 70px !important;
+}
+
+body div div div div form div .divUploadFile {
+    background-color: $colorBorder;
+    border: 1px solid $colorNavbarChildProfile;
+}
+
+body div div div div form div ul li div div div .divOpload::before,
+body div div div div form div ul li div div div .divOpload {
+    height: 6px;
+    top: -1.2px;
+}
+
+.divOploadDonwload {
+    background-color: $colorGreen;
+    height: 6px !important;
+    border-radius: 10px;
+}
+
+// end company profile
+// start user jobs
+body .paddingPageProfile div div div div div .rowGapJobs {
+    gap: 40px;
+}
+
+body div div .divSidePar div ul li .activeBold {
+    font-weight: bold;
+
+    img {
+        filter: grayscale(100%) brightness(0%);
+    }
+}
+
+body div .listFilterOverflow {
+    max-height: 950px;
+}
+
+body div .listFilterOverflow::-webkit-scrollbar {
+    width: 4px;
+}
+
+body div div .divSidePar div ul li .divGreenNumber {
+    background-color: $colorGreen;
+    width: 30px;
+    height: 30px;
+}
+
+body div div .divSidePar div ul li .hoverBoldList .imagelistWidth {
+    width: 18px;
+}
+
+body div nav div div div ul .listButtonCheck {
+    border: 1px solid $colorGreen;
+    transition: 0.5s;
+
+    .routerLink {
+        color: $colorGreen;
+    }
+}
+
+body div nav div div div ul .activeCheckButton {
+    background-color: $colorGreen;
+
+    .routerLink {
+        color: $colorWhite;
+    }
+}
+
+body div nav div div ul div .listButtonCheck:hover {
+    background-color: $colorGreen;
+
+    .routerLink {
+        color: $colorWhite;
+    }
+}
+
+body div nav div div div .imageSearchOverflowProfile {
+    top: 10px;
+    left: 8px;
+}
+
+body .paddingPageProfile div div div div div div div .marginRowWork {
+    margin-top: 30px !important;
+}
+
+body div ul li div div div .spanListJobs {
+    color: $colorlistJobs;
+}
+
+body div ul li div div .imagefilterJobs {
+    width: 64px;
+}
+
+body div ul li .borderNormalFilterAndHover {
+    border: 1px solid $colorPointLast;
+}
+
+body div ul li .borderNormalFilterAndHover:hover {
+    border: 1px solid $colorHoverCart;
+}
+
+body div ul li div div .colorActiveRed {
+    color: $colorRed;
+}
+
+body div div div div .divChildZero .divChildButton .buttonStyleREmoteOrFullTime {
+    background-color: $colorButtonFilter;
+}
+
+body div div div div .divChildZero .divChildButton::before {
+    content: "";
+    position: absolute;
+    background-color: $colorGreen;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    top: 10px;
+    transform: translate(-10px);
+}
+
+body div div div div .divChildZero {
+    .divChildButton:first-child::before {
+        display: none;
+    }
+}
+
+body div nav div .divWidthMobile .leftItem {
+    left: 0;
+    width: 10%;
+}
+
+body div nav div div div ul li .listButtonCheck .divRelativetransition .buttoncheckFIlter,
+body div nav div div div ul li .listButtonCheck .divRelativetransition .timeMaring {
+    transition: 0.3s;
+}
+
+body div nav div div div ul li .listButtonCheck .divRelativetransition .buttoncheckFIlter {
+    opacity: 0;
+}
+
+body div nav div div div ul li .listButtonCheck .divRelativetransition .buttoncheckFIlter {
+    right: -10px;
+}
+
+body div nav div div div ul li .listButtonCheck .divRelativetransition .timeMaring {
+    transform: translate(0);
+}
+
+body div nav div div div ul li .listButtonCheck .divRelativetransition {
+    .buttoncheckFIlter {
+        right: -15px;
+        opacity: 1;
+    }
+
+    .timeMaring {
+        transform: translate(-10px);
+    }
+}
+
+body div div div div div .grennButtonApplyOutline:hover,
+body div div div div div .grennButtonApply {
+    background-color: $colorGreen !important;
+
+    .imageHover {
+        filter: grayscale(100%) brightness(10000%);
+    }
+}
+
+body div div div div div .grennButtonApply:hover {
+    background-color: transparent !important;
+    color: $colorGreen !important;
+}
+
+body div div div div div div div div .styleUlList {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+body div div div div div div div div .styleUlList .styleLiList::before {
+    content: '';
+    font-weight: bold;
+    background-color: $colorBlack;
+    position: absolute;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    left: -12px;
+    top: 10px;
+}
+
+body div div div div div div .imageSize48 {
+    width: 48px;
+}
+
+body div div div div div div .sizeSpanFollowers {
+    font-size: 12px;
+}
+
+// end user jobs
+// start seeking work
+body div div nav div div div ul li .listButtonCheck div .imageColorWhite {
+    filter: invert(41%) sepia(88%) saturate(3993%) hue-rotate(349deg) brightness(10000%) contrast(102%);
+}
+
+body .paddingPageProfile div div div div div .rowGapJobs .marginRowWorkEmplloay {
+    margin-top: -15px !important;
+}
+
+body div div div div div .divCardImage .imageHoverCards {
+    transition: transform 0.3s ease-in-out;
+}
+
+body div div div div div .divCardImage:hover .imageHoverCards {
+    transform: scale(1.2) rotate(2deg);
+}
+
+// end seeking work
+// start media
+@media (max-width: 990px) {
+
+    body nav div div ul li .imageWidth {
+        width: 60%;
+    }
+
+    body .divChildSelect {
+        padding-top: 80px !important;
+    }
+
+    body .divHayThere {
+        padding-top: 80px !important;
+    }
+
+    body .divHayThere div .divHayPerint div div .rowGapColumn {
+        row-gap: 20px;
+    }
+
+    body nav div .imageLoginWidth {
+        width: 50px;
+    }
+
+    .listNoneMobile {
+        display: none !important;
+    }
+
+    body nav div div div div .imageSearch {
+        left: 8px;
+    }
+
+    body nav div div ul li .linkColorNavbarProfile.active,
+    body nav div div ul li .linkColorNavbarProfile:hover {
+        border-bottom: transparent;
+    }
+
+    body div div div div .modal-content {
+        min-width: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    body div div div div div .linkPhotoForm {
+        left: 130px !important;
+    }
+
+    body div div div div div div .linkPhoto {
+        left: 44% !important;
+    }
+
+    body div div ul li .rowChild {
+        border: 0 solid $colorBorder;
+    }
+
+    body div div ul li .rowChild {
+        div:nth-child(2) {
+            .linkConnectedProfile {
+                border: 0 solid $colorBorder;
+            }
+        }
+    }
+
+    body nav div div ul li div .divMessaging {
+        left: -40px;
+        min-width: 100%;
+    }
+
+    .divWidthMobile {
+        width: 100%;
+    }
+
+    body div .listFilterOverflow {
+        max-height: 290px;
+    }
+}
+
+// end media
