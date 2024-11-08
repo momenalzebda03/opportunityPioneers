@@ -12,10 +12,11 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                         <ul class="navbar-nav">
                             <li class="nav-item mx-2" v-for="(item, index) in listCard" :key="index">
-                                <router-link to="" class="text-decoration-none linkColorNavbarProfile"
+                                <div class="text-decoration-none linkColorNavbarProfile imageMouse"
+                                    v-if="!arrayAccounts.some(account => account.nameAccount.toLowerCase() === props.modelValue.toLowerCase()) || item.textLink !== 'Drafts'"
                                     :class="{ 'active': item.active }" @click.prevent="setActive(index, item.textLink)">
                                     {{ item.textLink }}
-                                </router-link>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -34,23 +35,24 @@ import { ref } from 'vue';
 import centerProjects from "../componentCenterProfile/centerProjects";
 import centerExperience from "../componentCenterProfile/centerExperience";
 import centerCertifical from "../componentCenterProfile/centerCertifications";
-import centerDrafts from "../componentCenterProfile/centerDrafts";
+import centerDrafts from "../componentCenterProfile/centerDrafts";;
+
+const props = defineProps({ modelValue: String });
+const arrayAccounts = ref([
+    { nameAccount: 'Drafts' },
+    { nameAccount: 'Mostafa' }
+]);
 
 const listCard = ref([
     { textLink: 'Projects', active: true },
     { textLink: 'Experience', active: false },
     { textLink: 'Certifications', active: false },
-    { textLink: 'Drafts', active: false }
+    { textLink: 'Drafts', active: false },
 ]);
 
-const activeForm = ref('');
-const showModal = ref(false);
-
-const setActive = (index, form) => {
+const setActive = (index, textLink) => {
     listCard.value.forEach((item, i) => {
-        item.active = (i === index);
+        item.active = (i == index);
     });
-    activeForm.value = form.toLowerCase();
-    showModal.value = true;
 };
 </script>

@@ -40,7 +40,7 @@
                             <img src="/assets/images/search.png" class="position-absolute imageSearch"
                                 v-else-if="!inputGange" />
                             <input type="text" placeholder="search" class="w-100 p-2 rounded-3 border border-1 inputPadding"
-                                v-model="inputGange" />
+                                v-model="inputGange" @input="updateInputGange" />
                         </div>
                     </div>
                     <ul class="row mt-2 mt-lg-3 align-items-center">
@@ -159,6 +159,7 @@
                                 v-else-if="!inputGange" />
                             <input type="text" placeholder="search" class="w-100 p-2 rounded-3 border border-2 inputPadding"
                                 v-model="inputGange" />
+
                         </div>
                     </div>
                     <ul class="row mt-2 mt-lg-3 align-items-center">
@@ -245,12 +246,16 @@
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-const inputGange = ref('');
 const inputGange1 = ref('');
 const route = useRoute();
 const currentRoute = computed(() => route.path);
 const refMessaging = ref(false);
 const functionBlockRef = ref(null);
+
+const props = defineProps({ modelValue: String });
+const emit = defineEmits(['update:modelValue']);
+const updateInputGange = () => { emit('update:modelValue', inputGange.value) };
+const inputGange = ref(props.modelValue);
 
 const functionBlockMassage = () => {
     refMessaging.value = !refMessaging.value;

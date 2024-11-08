@@ -112,6 +112,7 @@ label {
     height: 24px;
 }
 
+body div div nav div div div ul li .imageMouse .routerLink div .rotateRow,
 .selectOpen.arrow {
     transform: translateY(-50%) rotate(180deg);
 }
@@ -461,7 +462,6 @@ body div div form .rowChild div div div .selectWaths li {
 }
 
 body ul .listStyles {
-    transition: 0.5s;
     flex: 0 !important;
     width: 0 !important;
     transition: 0.5s;
@@ -490,7 +490,7 @@ body div form div .inputWidthEmailTrue {
 
 .colorProfile,
 body div form div .inputWidthEmailTrue::placeholder {
-    color: $colorGreen;
+    color: $colorGreen !important;
 }
 
 body div form div .inputWidthEmailFalse {
@@ -841,6 +841,10 @@ body div .listFilterOverflow::-webkit-scrollbar {
     width: 4px;
 }
 
+body div .listFilterOverflow li .borderNormalFilterAndHover div div .colorCardCairt {
+    color: $colorCart;
+}
+
 body div div .divSidePar div ul li .divGreenNumber {
     background-color: $colorGreen;
     width: 30px;
@@ -1001,6 +1005,7 @@ body div div div div div div .sizeSpanFollowers {
 // end user jobs
 // start seeking work
 body div div nav div div div ul li .listButtonCheck div .imageColorWhite {
+    transition: 0.5s;
     filter: invert(41%) sepia(88%) saturate(3993%) hue-rotate(349deg) brightness(10000%) contrast(102%);
 }
 
@@ -1014,6 +1019,10 @@ body div div div div div .divCardImage .imageHoverCards {
 
 body div div div div div .divCardImage:hover .imageHoverCards {
     transform: scale(1.2) rotate(2deg);
+}
+
+body div div nav div div div ul li .imageMouse .routerLink div .rotateRow {
+    transition: 0.5s;
 }
 
 // end seeking work
